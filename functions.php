@@ -50,6 +50,7 @@ function portfolio_3_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'portfolio_3' ),
+			
 		)
 	);
 

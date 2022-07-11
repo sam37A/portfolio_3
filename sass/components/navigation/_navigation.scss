@@ -1,12 +1,39 @@
+
+.site-header{
+	height: 60px;
+    width: 100%;
+    // background-color: #eedbff;
+	// background-color:#561ab8;
+	// background-color: #111111;
+	background-color: #0c1e27;
+	
+	margin-bottom: -15px;
+	
+    position: sticky;
+    top: 0;
+    z-index: 1;
+	.site-branding{
+		float: left;
+		// margin: 5px 15px;
+		height:50px;
+		width:50px;
+		
+		
+	}
+	
+}
+
 .main-navigation {
 	display: block;
 	width: 100%;
+	
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		float: right;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -60,6 +87,21 @@
 	a {
 		display: block;
 		text-decoration: none;
+		
+		display: inline-block;
+		color: #ffffff;
+		font-weight: bolder;
+		text-transform: uppercase;
+		margin: 20px 20px;
+		
+
+		&:hover{
+			color: darkmagenta;
+		}
+		&:active{
+			color:cornflowerblue;
+			
+		}
 	}
 
 	.current_page_item > a,

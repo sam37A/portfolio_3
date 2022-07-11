@@ -16,6 +16,15 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<!-- bootstrap css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- bootstrap js  -->
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Sacramento&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Rubik+Moonrocks&family=Sacramento&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Poppins&family=Rubik+Moonrocks&family=Sacramento&display=swap" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
@@ -24,25 +33,14 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'portfolio_3' ); ?></a>
-
+	<script src="https://kit.fontawesome.com/6b35074062.js" crossorigin="anonymous"></script>
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
+			
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$portfolio_3_description = get_bloginfo( 'description', 'display' );
-			if ( $portfolio_3_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $portfolio_3_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+				
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
