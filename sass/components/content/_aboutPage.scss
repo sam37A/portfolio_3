@@ -297,3 +297,633 @@
        
     }
 }
+
+
+// mq 1
+@media (max-width:480px){
+
+    .about-container{
+        height: 100vh;
+        background-color: #052230;
+      
+       text-align: center;
+       .portfolio-section{
+           padding-top: 20px;
+       
+           background-position: center;
+           background-size: cover;
+           background-repeat: no-repeat;
+       
+           .portfolio-img-box{
+              margin:0 auto;
+            padding-top: 20px;
+            
+               height: 400px;
+               width: 400px;
+               border-radius: 50%;
+             
+                img{
+                  
+                   height: 350px;
+                   width: 350px;
+                   border-radius: 50%;
+                   border:2px solid white;
+               }
+                
+               
+              
+           }
+       }
+    }
+    
+    .bio-section{
+        
+    
+        .bio-content{
+      min-height: 965px;
+           
+           h1{
+               color:#ffffff;
+               padding-top: 10px;
+
+           }
+    
+        
+           q{
+             font-size: 25px; 
+             width:100%;
+           
+         }
+    
+            p{
+           
+           font-size: 18px;
+           
+          
+            }
+      
+        }
+    }
+    
+    // section 2
+    .featured-skill-section{
+       
+    
+        .featured-skill-box{
+           
+            display:flex;
+            justify-content: space-around;
+             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+             
+    
+            .designer-box{
+                display: none;
+                img{
+                   
+                }
+    
+            }
+            .designer-intro-box{
+    
+                width: 95%;
+    
+                .btn{
+                   
+                }
+               
+             
+    
+              
+    
+                h1{
+                   
+                  
+                }
+              
+               
+           
+                h3{
+                  
+                
+            }
+               pre{
+                 
+                
+               }
+               pre:hover{
+                 
+               }
+            }
+    
+            .developer-box{
+                display: none;
+              
+                img{
+                    
+                }
+              
+    
+            }
+            .developer-intro-box{
+    
+               width: 95%;
+    
+                .btn{
+                  
+                }
+    
+                @keyframes blink{
+    
+                    50% {
+                        opacity:0;
+                        color:#a72c2c;
+                    }
+                     80% {
+                         opacity: 0.5;
+                        
+                     }
+                }
+    
+                
+                h1{
+                    color:#ffffff;
+                    font-family: poppins;
+                    font-size: 50px;
+                    animation:blink 2s linear infinite;
+                }
+                h3{
+                 
+                  
+                    
+                }
+                   pre{
+                    
+                    
+                   }
+                   pre:hover{
+                      
+                   }
+               
+            }
+        }
+    }
+       
+    // section 3
+    .skill-section{
+       
+        h1{
+         
+        }
+      li{
+       
+      }
+       
+        .skill-hobby-box{
+           
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    
+        }
+        .skills{
+         width: 95%;  
+          margin: 10px auto; 
+    
+        }
+        .hobby{
+           width:95%; 
+           margin: 10px auto; 
+        }
+        .skills:hover{
+           
+        }
+        .hobby:hover{
+           
+           
+        }
+    }
+
+}
+
+// 2nd media break point
+@media  (min-width:481px) and (max-width:768px){
+    .about-container{
+        height: 100vh;
+        background-color: #052230;
+      
+       text-align: center;
+       .portfolio-section{
+           padding-top: 20px;
+       
+           background-position: center;
+           background-size: cover;
+           background-repeat: no-repeat;
+       
+           .portfolio-img-box{
+              margin:0 auto;
+            padding-top: 20px;
+            
+               height: 400px;
+               width: 400px;
+               border-radius: 50%;
+             
+                img{
+                  
+                   height: 350px;
+                   width: 350px;
+                   border-radius: 50%;
+                   border:2px solid white;
+               }
+                
+               
+              
+           }
+       }
+    }
+    
+    .bio-section{
+        
+    
+        .bio-content{
+      min-height: 965px;
+           
+           h1{
+               color:#ffffff;
+               padding-top: 10px;
+
+           }
+    
+        
+           q{
+             font-size: 25px; 
+             width:100%;
+           
+         }
+    
+            p{
+           
+           font-size: 18px;
+           
+          
+            }
+      
+        }
+    }
+    
+    // section 2
+    .featured-skill-section{
+       
+    
+        .featured-skill-box{
+           
+            display:flex;
+            justify-content: space-around;
+             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+             
+    
+            .designer-box{
+                display: none;
+                img{
+                   
+                }
+    
+            }
+            .designer-intro-box{
+    
+                width: 95%;
+    
+                .btn{
+                   
+                }
+               
+             
+    
+              
+    
+                h1{
+                   
+                  
+                }
+              
+               
+           
+                h3{
+                  
+                
+            }
+               pre{
+                 
+                
+               }
+               pre:hover{
+                 
+               }
+            }
+    
+            .developer-box{
+                display: none;
+              
+                img{
+                    
+                }
+              
+    
+            }
+            .developer-intro-box{
+    
+               width: 95%;
+    
+                .btn{
+                  
+                }
+    
+                @keyframes blink{
+    
+                    50% {
+                        opacity:0;
+                        color:#a72c2c;
+                    }
+                     80% {
+                         opacity: 0.5;
+                        
+                     }
+                }
+    
+                
+                h1{
+                    color:#ffffff;
+                    font-family: poppins;
+                    font-size: 50px;
+                    animation:blink 2s linear infinite;
+                }
+                h3{
+                 
+                  
+                    
+                }
+                   pre{
+                    
+                    
+                   }
+                   pre:hover{
+                      
+                   }
+               
+            }
+        }
+    }
+       
+    // section 3
+    .skill-section{
+       
+        h1{
+         
+        }
+      li{
+       
+      }
+       
+        .skill-hobby-box{
+           
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    
+        }
+        .skills{
+         width: 95%;  
+          margin: 10px auto; 
+    
+        }
+        .hobby{
+           width:95%; 
+           margin: 10px auto; 
+        }
+        .skills:hover{
+           
+        }
+        .hobby:hover{
+           
+           
+        }
+    }
+   
+}
+
+// 3rd media breakpoint
+
+@media (min-width:769px) and (max-width:1024px){
+    .about-container{
+        height: 100vh;
+        background-color: #052230;
+      
+       text-align: center;
+       .portfolio-section{
+           padding-top: 20px;
+       
+           background-position: center;
+           background-size: cover;
+           background-repeat: no-repeat;
+       
+           .portfolio-img-box{
+              margin:0 auto;
+            padding-top: 20px;
+            
+               height: 400px;
+               width: 400px;
+               border-radius: 50%;
+             
+                img{
+                  
+                   height: 350px;
+                   width: 350px;
+                   border-radius: 50%;
+                   border:2px solid white;
+               }
+                
+               
+              
+           }
+       }
+    }
+    
+    .bio-section{
+        
+    
+        .bio-content{
+      min-height: 600px;
+           
+           h1{
+               color:#ffffff;
+               padding-top: 10px;
+
+           }
+    
+        
+           q{
+             font-size: 25px; 
+             width:100%;
+           
+         }
+    
+            p{
+           
+           font-size: 18px;
+           
+          
+            }
+      
+        }
+    }
+    
+    // section 2
+    .featured-skill-section{
+       
+    
+        .featured-skill-box{
+           
+            display:flex;
+            // justify-content: space-around;
+             flex-direction:row;
+            justify-content: center;
+            align-items: center;
+             justify-content: space-around;
+    
+            .designer-box{
+               
+                img{
+                   
+                }
+    
+            }
+            .designer-intro-box{
+    
+                width: 54%;
+    
+                .btn{
+                   
+                }
+               
+             
+    
+              
+    
+                h1{
+                   
+                  
+                }
+              
+               
+           
+                h3{
+                  
+                
+            }
+               pre{
+                 
+                margin-bottom: 10px;
+               }
+               pre:hover{
+                 
+               }
+            }
+    
+            .developer-box{
+                // display: none;
+              height:600px;
+                img{
+                    
+                }
+              
+    
+            }
+            .developer-intro-box{
+    
+               width: 54%;
+    
+                .btn{
+                  
+                }
+    
+                @keyframes blink{
+    
+                    50% {
+                        opacity:0;
+                        color:#a72c2c;
+                    }
+                     80% {
+                         opacity: 0.5;
+                        
+                     }
+                }
+    
+                
+                h1{
+                    color:#ffffff;
+                    font-family: poppins;
+                    font-size: 50px;
+                    animation:blink 2s linear infinite;
+                }
+                h3{
+                 
+                  
+                    
+                }
+                   pre{
+                    
+                    
+                   }
+                   pre:hover{
+                      
+                   }
+               
+            }
+        }
+    }
+       
+    // section 3
+    .skill-section{
+       
+        h1{
+         
+        }
+      li{
+       
+      }
+       
+        .skill-hobby-box{
+           
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+    
+        }
+        .skills{
+         width: 45%;  
+          margin: 10px auto; 
+    
+        }
+        .hobby{
+           width:45%; 
+           margin: 10px auto; 
+        }
+        .skills:hover{
+           
+        }
+        .hobby:hover{
+           
+           
+        }
+    }
+   
+}

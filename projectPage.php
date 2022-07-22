@@ -10,7 +10,7 @@
 <div class="project-container">
 <h1> My projects </h1>
     <section class ="project-section">
-        <div class="card" style="width: 25rem;">
+        <div class="card" id="break" style="width: 25rem;">
             <img src="http://portfolio3.local/wp-content/uploads/2022/06/codeBay.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">quoteBay</h5>
@@ -21,7 +21,7 @@
             </div>
         </div>
                 <!-- second -->
-        <div class="card" style="width: 25rem;">
+        <div class="card" id="break" style="width: 25rem;">
             <img src="http://portfolio3.local/wp-content/uploads/2022/06/blossom_corner.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Blossom Corner</h5>
@@ -30,7 +30,7 @@
             </div>
         </div>
                 <!-- 3rd card -->
-        <div class="card" style="width: 25rem;">
+        <div class="card"  id="break" style="width: 25rem;">
             <img src="http://portfolio3.local/wp-content/uploads/2022/06/art_Academy.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Art Academy</h5>
@@ -38,8 +38,8 @@
                 <a href="https://sam37a.github.io/artAcademics/templet.html"  target = "_blank" class="btn btn-primary">View</a>
             </div>
         </div>
-        <!-- secont column -->
-        <div class="card" style="width: 25rem;">
+        <!-- second column -->
+        <div class="card"  id="break" style="width: 25rem;">
             <img src="http://portfolio3.local/wp-content/uploads/2022/06/portfolio2.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Portfolio </h5>
@@ -48,7 +48,7 @@
             </div>
         </div>
                 <!-- second -->
-        <div class="card" style="width: 25rem;">
+        <div class="card" id="break" style="width: 25rem;">
             <img src="http://portfolio3.local/wp-content/uploads/2022/06/PortFolio1.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Portfolio</h5>
@@ -57,7 +57,7 @@
             </div>
         </div>
                 <!-- 3rd card -->
-        <div class="card" style="width: 25rem;">
+        <div class="card" id="break" style="width: 25rem;">
             <img src="http://portfolio3.local/wp-content/uploads/2022/06/SCC.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">SCSS</h5>
@@ -71,7 +71,7 @@
     <h1 >WordPress Projects</h1>
    <div class="wordPress-project-section">
    
-       <div>
+    <div>
        <h1 >Child-theme</h1>
          <div class="project-1">
            
@@ -79,7 +79,7 @@
         <div class="project-2">
             
         </div>
-        </div>
+     </div>
         <br><br>
         
         <div>

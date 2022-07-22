@@ -10,14 +10,14 @@
 
 <div class="blog-container">
     <div class="creative-background-box">
-    <h1 class ="blog-title">Creative Corner</h1>
+        <h1 class ="blog-title">Creative Corner</h1>
     </div>
 
     <section class="writing-section">
             
         <div class="writing-content-box">
        
-        <h1 class ="category-title">Random Diaries </h1>
+            <h1 class ="category-title">Random Diaries </h1>
             <div class=" random-diary">
                 
                 <div class ="diary-image-box">  <img src="" alt="">
@@ -144,10 +144,10 @@
                   
             </div>
 
-        </div>
-    </section>
+</div>
+ </section>
 </div>
 
 
-<?Php get_footer(); ?>
+ <?Php get_footer(); ?> 
 

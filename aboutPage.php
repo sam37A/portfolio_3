@@ -19,15 +19,11 @@
             <h1>About</h1>
             <q>Your inner voice whispers, but speaks the loudest.</q>
             <p>           
-                <!-- <q>Your inner voice whispers, but speaks the loudest. -->
-                                                    
-              
-               
-                    Hi, I am Suman Mainali, a WordPress developer, from Sacramento, California. 
+                Hi, I am Suman Mainali, a WordPress developer, from Sacramento, California. 
 
                     I design and develop responsive websites. I use Wordpress <abbr title ="content management system">CMS</abbr> to develop a website which is a user -friendly and secured platform for any kind of website.
 
-                    I held myself back for a long time thinking that the coding is not my  cup of tea. As Seth Godin said,  “If it scares you, it might be a good thing to try” and I did. The journey started a year ago joining the website for Beginners class, a workforce training course by Bitwise Industry. I studied basic html, css, bootstrap and Javascript and built the confidence to make a responsive website. Now it feels like I recognize my inner calling, and started enjoying coding where I can go beyond my imagination and satisfy the clients.
+                    I held myself back for a long time thinking that the coding is not my  cup of tea. As Seth Godin said,  “If it scares you, it might be a good thing to try” and I did. The journey started a year ago joining the website for Beginners class, a workforce training course by Bitwise Industry. I studied basic html, css, bootstrap and Javascript, and built up the confidence to make a responsive website. Now it feels like I recognize my inner calling, and started enjoying coding where I can go beyond my imagination and satisfy the clients.
                     As they reiterate a lot here in Bitwise, ‘No one belongs more than you’, I literally felt special when Bitwise appointed me as the WordPress apprentice under Alpha Works training  for one whole year. I learned a lot about WordPress during the journey and got the opportunity to work on different projects which prepared myself to work for client projects. <br>
                     I look forward to working with future clients. Thank you.
 
@@ -48,7 +44,7 @@
                 
                 <pre>
                 <h3>I use Figma tool for: </h3>
-                Designing mobile app interfaces
+                Designing mobile app 
                 Wireframing websites
                 Prototyping designs
                 Crafting social media posts
@@ -84,11 +80,15 @@
         <h1>More About me...</h1>
         <div class="skill-hobby-box">
             <div class="skills">
-                <h1>Skills</h1>
+                 <h1>Skills</h1>
+                
                 <li>HTML/CSS/JavaScript/Bootstrap</li>
+               
                 <li> Git and Github</li>
                 <li>Wireframing using Figma</li>
                 <li>WordPress</li>
+               
+       
                 
             </div>
             <div class="hobby">
@@ -100,6 +100,6 @@
             </div>
         </div>
     </section>
+    <?Php get_footer(); ?>
 </div>
 
-<?Php get_footer(); ?>

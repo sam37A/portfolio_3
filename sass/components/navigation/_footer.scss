@@ -3,9 +3,7 @@
 
 // my footer
 footer{
-    /* height: 200px; */
-    // background-color:#561ab8;
-    // background-color: #111111;
+   
     background-color: #0c1e27;
    margin-bottom: -25px;
 }
@@ -59,3 +57,17 @@ color: white;
     color:purple;
 }
 // my footer
+
+
+// footer media queries
+@media  (max-width:480px){
+footer ul{
+    display:flex;
+    justify-content: center;
+   align-items: center;
+    flex-direction:column;
+}
+ .footer-box{
+     text-align: left;
+ }
+}

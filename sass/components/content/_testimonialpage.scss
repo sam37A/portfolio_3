@@ -20,6 +20,18 @@
     background-color: #052230;
    
 }
+.testimonial4{
+    height:550px;
+    width: 100%;
+    background-color: #052230;
+   
+}
+.testimonial5{
+    height:550px;
+    width: 100%;
+    background-color: #052230;
+   
+}
 
 .recomend-1{
     height: 300px;
@@ -40,8 +52,6 @@
     width: 300px;
     border-radius: 50%;
     border: 3px solid white;
-    
-    
     margin: 10px auto;
     background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/nepts.jpg");
     background-repeat: no-repeat;
@@ -54,11 +64,34 @@
     border-radius: 50%;
     border: 3px solid white;
     color:red;
-   
-    
-    
-    margin: 10px auto;
+     margin: 10px auto;
     background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/miguel.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.recomend-4{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid white;
+    color:red;
+     margin: 10px auto;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/esteban.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.recomend-5{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid white;
+    color:red;
+     margin: 10px auto;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/lucas.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -86,7 +119,7 @@
 
 .template-recomender{
     text-align: center;
-    color:white;
+    color:rgb(206, 200, 13);
     font-size: 20px;
     // margin-bottom: 5px;
     
@@ -96,5 +129,208 @@
   margin:20px 0 0 0;
 
 }
+//  media query starts
+// mq 1
 
+@media  (max-width:480px){
+    .testimonial1{
 
+    }
+
+    .testimonial2{
+       
+
+    }
+
+    .testimonial3{
+      
+    }
+
+    .recomend-1{
+       height:100px;
+        width: 100px;
+     
+       
+
+    }
+
+    .recomend-2{
+        height:100px;
+        width: 100px;
+     
+
+    }
+    .recomend-3{
+        height:100px;
+        width: 100px;
+     
+    }
+    .recomend-4{
+        height:100px;
+        width: 100px;
+     
+    }
+    .recomend-5{
+        height:100px;
+        width: 100px;
+     
+    }
+
+    .templet-paragraph{
+        text-align:justify;
+        font-size:20px;
+       
+    }
+    .templet-heading{
+       
+        
+       
+        
+    }
+    
+    .template-recomender{
+       
+    }
+    .recomendor-post{
+        font-weight: 600;
+        
+    }
+    
+    
+}
+
+// mq 2
+@media  (min-width:481px) and (max-width:768px){
+    .testimonial1{
+
+    }
+
+    .testimonial2{
+       
+
+    }
+
+    .testimonial3{
+      
+    }
+
+    .recomend-1{
+       height:100px;
+        width: 100px;
+     
+       
+
+    }
+
+    .recomend-2{
+        height:100px;
+        width: 100px;
+     
+
+    }
+    .recomend-3{
+        height:100px;
+        width: 100px;
+     
+    }
+    .recomend-4{
+        height:100px;
+        width: 100px;
+     
+    }
+    .recomend-5{
+        height:100px;
+        width: 100px;
+     
+    }
+
+    .templet-paragraph{
+        text-align:justify;
+        font-size:20px;
+       
+    }
+    .templet-heading{
+       
+        
+       
+        
+    }
+    
+    .template-recomender{
+       
+    }
+    .recomendor-post{
+        font-weight: 600;
+        
+    }
+    
+     
+}
+
+// 3rd breakpoint
+@media  (min-width:769px) and (max-width:1024px){
+
+    .testimonial1{
+
+    }
+
+    .testimonial2{
+       
+
+    }
+
+    .testimonial3{
+      
+    }
+
+    .recomend-1{
+       height:200px;
+        width: 200px;
+     
+       
+
+    }
+
+    .recomend-2{
+        height:200px;
+        width: 200px;
+     
+
+    }
+    .recomend-3{
+        height:200px;
+        width: 200px;
+     
+    }
+    .recomend-4{
+        height:200px;
+        width: 200px;
+     
+    }
+    .recomend-5{
+        height:200px;
+        width: 200px;
+     
+    }
+
+    .templet-paragraph{
+        text-align:justify;
+        font-size:20px;
+       
+    }
+    .templet-heading{
+       
+        
+       
+        
+    }
+    
+    .template-recomender{
+       
+    }
+    .recomendor-post{
+        font-weight: 600;
+        
+    }
+    
+}

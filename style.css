@@ -630,8 +630,15 @@ textarea {
 }
 .site-header .site-branding {
   float: left;
+  margin-left: 5px;
   height: 50px;
   width: 50px;
+  animation: spin 10s infinite linear;
+}
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 .main-navigation {
@@ -724,7 +731,6 @@ textarea {
 }
 
 footer {
-  /* height: 200px; */
   background-color: #0c1e27;
   margin-bottom: -25px;
 }
@@ -777,6 +783,18 @@ hr {
   color: purple;
 }
 
+@media (max-width: 480px) {
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-box {
+    text-align: left;
+  }
+}
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -870,9 +888,103 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #bcb6a9;
   width: 50%;
   height: 900px;
+}
+
+@media (max-width: 480px) {
+  .home-container .hero-section .hero-title-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .home-container .hero-section .hero-title-box .hero-image {
+    height: 600px;
+    width: 100%;
+  }
+  .home-container .hero-section .hero-title-box .hero-title {
+    padding-top: 50px;
+    width: 100%;
+  }
+  .home-container .hero-section .hero-title-box .hero-title .hi {
+    font-size: 40px;
+  }
+  .home-container .hero-section .hero-title-box .hero-title h1, .home-container .hero-section .hero-title-box .hero-title span {
+    font-size: 25px;
+    padding: 5px;
+  }
+  .home-container .hero-section .hero-title-box .hero-title .word-press {
+    font-size: 20px;
+  }
+  .home-container .hero-section .hero-title-box .hero-title p {
+    margin: 5px;
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .home-container .hero-section .hero-title-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .home-container .hero-section .hero-title-box .hero-image {
+    height: 900px;
+    width: 100%;
+  }
+  .home-container .hero-section .hero-title-box .hero-title {
+    padding-top: 50px;
+    width: 100%;
+  }
+  .home-container .hero-section .hero-title-box .hero-title .hi {
+    font-size: 40px;
+  }
+  .home-container .hero-section .hero-title-box .hero-title h1, .home-container .hero-section .hero-title-box .hero-title span {
+    font-size: 25px;
+    padding: 5px;
+  }
+  .home-container .hero-section .hero-title-box .hero-title .word-press {
+    font-size: 20px;
+  }
+  .home-container .hero-section .hero-title-box .hero-title p {
+    margin: 5px;
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+.home-container .hero-section .hero-title-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.home-container .hero-section .hero-title-box .hero-image {
+  height: 900px;
+  width: 100%;
+}
+.home-container .hero-section .hero-title-box .hero-title {
+  padding-top: 50px;
+  width: 100%;
+}
+.home-container .hero-section .hero-title-box .hero-title .hi {
+  font-size: 40px;
+}
+.home-container .hero-section .hero-title-box .hero-title h1, .home-container .hero-section .hero-title-box .hero-title span {
+  font-size: 25px;
+  padding: 5px;
+}
+.home-container .hero-section .hero-title-box .hero-title .word-press {
+  font-size: 20px;
+}
+.home-container .hero-section .hero-title-box .hero-title p {
+  margin: 5px;
+  font-size: 20px;
+  padding: 15px;
 }
 
 .about-container {
@@ -1084,6 +1196,276 @@ hr {
   transition: 0.9s ease;
 }
 
+@media (max-width: 480px) {
+  .about-container {
+    height: 100vh;
+    background-color: #052230;
+    text-align: center;
+  }
+  .about-container .portfolio-section {
+    padding-top: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about-container .portfolio-section .portfolio-img-box {
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }
+  .about-container .portfolio-section .portfolio-img-box img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .bio-section .bio-content {
+    min-height: 965px;
+  }
+  .bio-section .bio-content h1 {
+    color: #ffffff;
+    padding-top: 10px;
+  }
+  .bio-section .bio-content q {
+    font-size: 25px;
+    width: 100%;
+  }
+  .bio-section .bio-content p {
+    font-size: 18px;
+  }
+
+  .featured-skill-section .featured-skill-box {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .featured-skill-section .featured-skill-box .designer-box {
+    display: none;
+  }
+  .featured-skill-section .featured-skill-box .designer-intro-box {
+    width: 95%;
+  }
+  .featured-skill-section .featured-skill-box .developer-box {
+    display: none;
+  }
+  .featured-skill-section .featured-skill-box .developer-intro-box {
+    width: 95%;
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+      color: #a72c2c;
+    }
+    80% {
+      opacity: 0.5;
+    }
+  }
+  .featured-skill-section .featured-skill-box .developer-intro-box h1 {
+    color: #ffffff;
+    font-family: poppins;
+    font-size: 50px;
+    animation: blink 2s linear infinite;
+  }
+  .skill-section .skill-hobby-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .skill-section .skills {
+    width: 95%;
+    margin: 10px auto;
+  }
+  .skill-section .hobby {
+    width: 95%;
+    margin: 10px auto;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .about-container {
+    height: 100vh;
+    background-color: #052230;
+    text-align: center;
+  }
+  .about-container .portfolio-section {
+    padding-top: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about-container .portfolio-section .portfolio-img-box {
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }
+  .about-container .portfolio-section .portfolio-img-box img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .bio-section .bio-content {
+    min-height: 965px;
+  }
+  .bio-section .bio-content h1 {
+    color: #ffffff;
+    padding-top: 10px;
+  }
+  .bio-section .bio-content q {
+    font-size: 25px;
+    width: 100%;
+  }
+  .bio-section .bio-content p {
+    font-size: 18px;
+  }
+
+  .featured-skill-section .featured-skill-box {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .featured-skill-section .featured-skill-box .designer-box {
+    display: none;
+  }
+  .featured-skill-section .featured-skill-box .designer-intro-box {
+    width: 95%;
+  }
+  .featured-skill-section .featured-skill-box .developer-box {
+    display: none;
+  }
+  .featured-skill-section .featured-skill-box .developer-intro-box {
+    width: 95%;
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+      color: #a72c2c;
+    }
+    80% {
+      opacity: 0.5;
+    }
+  }
+  .featured-skill-section .featured-skill-box .developer-intro-box h1 {
+    color: #ffffff;
+    font-family: poppins;
+    font-size: 50px;
+    animation: blink 2s linear infinite;
+  }
+  .skill-section .skill-hobby-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .skill-section .skills {
+    width: 95%;
+    margin: 10px auto;
+  }
+  .skill-section .hobby {
+    width: 95%;
+    margin: 10px auto;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-container {
+    height: 100vh;
+    background-color: #052230;
+    text-align: center;
+  }
+  .about-container .portfolio-section {
+    padding-top: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about-container .portfolio-section .portfolio-img-box {
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }
+  .about-container .portfolio-section .portfolio-img-box img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .bio-section .bio-content {
+    min-height: 600px;
+  }
+  .bio-section .bio-content h1 {
+    color: #ffffff;
+    padding-top: 10px;
+  }
+  .bio-section .bio-content q {
+    font-size: 25px;
+    width: 100%;
+  }
+  .bio-section .bio-content p {
+    font-size: 18px;
+  }
+
+  .featured-skill-section .featured-skill-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .featured-skill-section .featured-skill-box .designer-intro-box {
+    width: 54%;
+  }
+  .featured-skill-section .featured-skill-box .designer-intro-box pre {
+    margin-bottom: 10px;
+  }
+  .featured-skill-section .featured-skill-box .developer-box {
+    height: 600px;
+  }
+  .featured-skill-section .featured-skill-box .developer-intro-box {
+    width: 54%;
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+      color: #a72c2c;
+    }
+    80% {
+      opacity: 0.5;
+    }
+  }
+  .featured-skill-section .featured-skill-box .developer-intro-box h1 {
+    color: #ffffff;
+    font-family: poppins;
+    font-size: 50px;
+    animation: blink 2s linear infinite;
+  }
+  .skill-section .skill-hobby-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .skill-section .skills {
+    width: 45%;
+    margin: 10px auto;
+  }
+  .skill-section .hobby {
+    width: 45%;
+    margin: 10px auto;
+  }
+}
 .blog-container .creative-background-box {
   height: 300px;
   width: 100%;
@@ -1330,6 +1712,504 @@ hr {
   border-radius: 50%;
 }
 
+@media (max-width: 480px) {
+  .blog-container .creative-background-box {
+    height: 100px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/about-bg-scaled.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 480px;
+  }
+  .blog-container .creative-background-box h1 {
+    font-size: 30px;
+    font-family: "sacramento";
+    text-transform: uppercase;
+    color: #f11010;
+  }
+  .blog-container .creative-background-box h1:hover {
+    color: #8d12b6;
+    transform: rotate(360deg);
+    transition: 0.9s ease-in-out;
+    font-family: poppins;
+  }
+  .blog-container .writing-section .writing-content-box .category-title {
+    color: white;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 5px solid red;
+  }
+  .blog-container .writing-section .writing-content-box .category-title:hover {
+    transform: rotate(360deg);
+    transition: 0.9s ease;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary {
+    height: 500px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-image-box {
+    height: 400px;
+    width: 95%;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/diary_image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-topic-box {
+    height: 500px;
+    width: 95%;
+    background-color: #42aff8;
+    overflow: scroll;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-topic-box details {
+    background-color: #0099ff;
+    padding: 5px;
+    border-radius: 30px;
+    margin: 10px;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-topic-box summary {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-topic-box img {
+    height: 300px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-topic-box h1 {
+    text-align: center;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-topic-box p {
+    margin: 10px;
+    text-align: justify;
+    font-size: 20px;
+  }
+  .blog-container .writing-section .writing-content-box .poetry {
+    height: 500px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blog-container .writing-section .writing-content-box .poetry .poetry-image-box {
+    height: 400px;
+    width: 95%;
+    background-color: aqua;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/poetry-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .blog-container .writing-section .writing-content-box .poetry .poetry-topic-box {
+    height: 400px;
+    width: 95%;
+    background-color: #42aff8;
+    overflow: scroll;
+  }
+  .blog-container .writing-section .writing-content-box .poetry .poetry-topic-box details {
+    background-color: #0099ff;
+    padding: 5px;
+    border-radius: 30px;
+    margin: 10px;
+  }
+  .blog-container .writing-section .writing-content-box .poetry .poetry-topic-box summary {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  .blog-container .writing-section .writing-content-box .poetry .poetry-topic-box h1 {
+    text-align: center;
+  }
+  .blog-container .writing-section .writing-content-box .poetry .poetry-topic-box pre {
+    background-color: #0099ff;
+  }
+  .blog-container .writing-section .writing-content-box .book-review {
+    height: 500px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blog-container .writing-section .writing-content-box .book-review .book-review-image-box {
+    height: 400px;
+    width: 95%;
+    background-color: cadetblue;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/1000_splendid_sun.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .blog-container .writing-section .writing-content-box .book-review .review-topic-box {
+    height: 400px;
+    width: 95%;
+    background-color: #f0e4e4;
+    background-color: black;
+    color: white;
+    font-family: poppins;
+    overflow: scroll;
+  }
+  .blog-container .writing-section .writing-content-box .book-review .review-topic-box h1 {
+    text-align: center;
+  }
+  .blog-container .writing-section .writing-content-box .book-review .review-topic-box p {
+    margin: 10px;
+    text-align: justify;
+    font-size: 20px;
+  }
+  .blog-container .gallery-section h1 {
+    width: 250px;
+    color: white;
+    margin: 10px auto 20px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 5px solid red;
+  }
+  .blog-container .gallery-section .gallery-content-box {
+    margin: 15px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blog-container .gallery-section .gallery-content-box .painting-1 {
+    height: 500px;
+    width: 95%;
+    background-color: #e85f5f;
+    border-radius: 10px;
+    margin: 30px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/photo1-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .blog-container .gallery-section .gallery-content-box .painting-2 {
+    height: 500px;
+    width: 95%;
+    background-color: #3010bd;
+    margin: 30px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting2-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .blog-container .gallery-section .gallery-content-box .painting-3 {
+    height: 500px;
+    width: 95%;
+    background-color: #181616;
+    margin: 30px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting3-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .blog-container .gallery-section .gallery-content-box .painting-4 {
+    height: 500px;
+    width: 95%;
+    background-color: #52b4e2;
+    margin: 30px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting4-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .blog-container .gallery-section .gallery-content-box .painting-5 {
+    height: 500px;
+    width: 95%;
+    background-color: #52b4e2;
+    margin: 30px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting5-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .blog-container .gallery-section .gallery-content-box .painting-6 {
+    height: 500px;
+    width: 95%;
+    background-color: #52b4e2;
+    margin: 30px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting6-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .blog-container .gallery-section .gallery-content-box .hover-effect:hover {
+    opacity: 0.7;
+    transition: 0.9s ease;
+    border-radius: 50%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .blog-container .creative-background-box {
+    height: 100px;
+    width: 100%;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/about-bg-scaled.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .blog-container .creative-background-box h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 35px;
+    font-family: "sacramento";
+    font-weight: 700;
+    font-style: oblique;
+    text-transform: uppercase;
+    color: #f11010;
+  }
+  .blog-container .creative-background-box h1:hover {
+    color: #8d12b6;
+    transform: rotate(360deg);
+    transition: 0.9s ease-in-out;
+    font-family: poppins;
+  }
+  .blog-container .writing-section .writing-content-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .blog-container .writing-section .writing-content-box .category-title {
+    color: white;
+    margin: auto;
+    padding: 10px;
+    border-bottom: 5px solid red;
+  }
+  .blog-container .writing-section .writing-content-box .category-title:hover {
+    transform: rotate(360deg);
+    transition: 0.9s ease;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary {
+    height: 500px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-image-box {
+    height: 400px;
+    width: 90%;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/diary_image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-topic-box {
+    height: 400px;
+    width: 70%;
+    background-color: #42aff8;
+    overflow: scroll;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-topic-box details {
+    background-color: #0099ff;
+    padding: 5px;
+    border-radius: 30px;
+    margin: 10px;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-topic-box summary {
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-topic-box img {
+    height: 300px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-topic-box h1 {
+    text-align: center;
+  }
+  .blog-container .writing-section .writing-content-box .random-diary .diary-topic-box p {
+    margin: 10px;
+    text-align: justify;
+    font-size: 20px;
+  }
+  .blog-container .writing-section .writing-content-box .poetry {
+    height: 500px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-container .writing-section .writing-content-box .poetry .poetry-image-box {
+    height: 400px;
+    width: 90%;
+    background-color: aqua;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/poetry-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .blog-container .writing-section .writing-content-box .poetry .poetry-topic-box {
+    height: 400px;
+    width: 70%;
+    background-color: #42aff8;
+    overflow: scroll;
+  }
+  .blog-container .writing-section .writing-content-box .poetry .poetry-topic-box details {
+    background-color: #0099ff;
+    padding: 5px;
+    border-radius: 30px;
+    margin: 10px;
+  }
+  .blog-container .writing-section .writing-content-box .poetry .poetry-topic-box summary {
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+  .blog-container .writing-section .writing-content-box .poetry .poetry-topic-box h1 {
+    text-align: center;
+  }
+  .blog-container .writing-section .writing-content-box .poetry .poetry-topic-box pre {
+    background-color: #0099ff;
+  }
+  .blog-container .writing-section .writing-content-box .book-review {
+    height: 500px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-container .writing-section .writing-content-box .book-review .book-review-image-box {
+    height: 400px;
+    width: 45%;
+    background-color: cadetblue;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/1000_splendid_sun.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .blog-container .writing-section .writing-content-box .book-review .review-topic-box {
+    height: 400px;
+    width: 50%;
+    background-color: #f0e4e4;
+    background-color: black;
+    color: white;
+    font-family: poppins;
+    overflow: scroll;
+  }
+  .blog-container .writing-section .writing-content-box .book-review .review-topic-box h1 {
+    text-align: center;
+  }
+  .blog-container .writing-section .writing-content-box .book-review .review-topic-box p {
+    margin: 10px;
+    text-align: justify;
+    font-size: 20px;
+  }
+  .blog-container .gallery-section h1 {
+    width: 250px;
+    color: white;
+    margin: 10px auto 20px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 5px solid red;
+  }
+  .blog-container .gallery-section .gallery-content-box {
+    margin: 15px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .blog-container .gallery-section .gallery-content-box .painting-1 {
+    height: 500px;
+    width: 95%;
+    background-color: #e85f5f;
+    border-radius: 10px;
+    margin: 10px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/photo1-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .blog-container .gallery-section .gallery-content-box .painting-2 {
+    height: 500px;
+    width: 95%;
+    background-color: #3010bd;
+    margin: 10px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting2-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .blog-container .gallery-section .gallery-content-box .painting-3 {
+    height: 500px;
+    width: 95%;
+    background-color: #181616;
+    margin: 10px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting3-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .blog-container .gallery-section .gallery-content-box .painting-4 {
+    height: 500px;
+    width: 95%;
+    background-color: #52b4e2;
+    margin: 10px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting4-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .blog-container .gallery-section .gallery-content-box .painting-5 {
+    height: 500px;
+    width: 95%;
+    background-color: #52b4e2;
+    margin: 10px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting5-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .blog-container .gallery-section .gallery-content-box .painting-6 {
+    height: 500px;
+    width: 95%;
+    background-color: #52b4e2;
+    margin: 10px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting6-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .blog-container .gallery-section .gallery-content-box .hover-effect:hover {
+    opacity: 0.7;
+    transition: 0.9s ease;
+    border-radius: 50%;
+  }
+}
 body {
   background-color: #052230;
 }
@@ -1424,6 +2304,297 @@ body {
   color: white;
 }
 
+@media (max-width: 480px) {
+  body {
+    background-color: #052230;
+  }
+
+  .project-container {
+    background-color: #052230;
+    margin-top: -20px;
+  }
+  .project-container h1 {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;
+    font-family: "poppins";
+  }
+  .project-container .project-section {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project-container .project-section .card {
+    margin: 10px 20px;
+    text-align: center;
+  }
+  .project-container .project-section .card .card-body {
+    background-color: #1b9bba;
+    color: white;
+  }
+  .project-container .project-section .card:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+  }
+  .project-container .wordPress-project-section {
+    margin-bottom: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project-container .wordPress-project-section .project-1 {
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 200px;
+    margin-left: 50px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/child-theme2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-container .wordPress-project-section .project-2 {
+    height: 400px;
+    width: 350px;
+    background-color: #08567d;
+    position: relative;
+    z-index: 1;
+    margin: 20px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/child_theme.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-container .wordPress-project-section .project-3 {
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 200px;
+    margin-left: 50px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/literature2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-container .wordPress-project-section .project-4 {
+    height: 400px;
+    width: 350px;
+    background-color: #08567d;
+    position: relative;
+    z-index: 1;
+    margin: 20px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/literature.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-container .btn {
+    color: white;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: #052230;
+  }
+
+  .project-container {
+    background-color: #052230;
+    margin-top: -20px;
+  }
+  .project-container h1 {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;
+    font-family: "poppins";
+  }
+  .project-container .project-section {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project-container .project-section .card {
+    margin: 10px 20px;
+    text-align: center;
+  }
+  .project-container .project-section .card .card-body {
+    background-color: #1b9bba;
+    color: white;
+  }
+  .project-container .project-section .card:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+  }
+  .project-container .wordPress-project-section {
+    margin-bottom: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project-container .wordPress-project-section .project-1 {
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 200px;
+    margin-left: 50px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/child-theme2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-container .wordPress-project-section .project-2 {
+    height: 400px;
+    width: 350px;
+    background-color: #08567d;
+    position: relative;
+    z-index: 1;
+    margin: 20px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/child_theme.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-container .wordPress-project-section .project-3 {
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 200px;
+    margin-left: 50px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/literature2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-container .wordPress-project-section .project-4 {
+    height: 400px;
+    width: 350px;
+    background-color: #08567d;
+    position: relative;
+    z-index: 1;
+    margin: 20px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/literature.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-container .btn {
+    color: white;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-color: #052230;
+  }
+
+  .project-container {
+    background-color: #052230;
+    margin-top: -20px;
+  }
+  .project-container h1 {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;
+    font-family: "poppins";
+  }
+  .project-container .project-section {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project-container .project-section .card {
+    margin: 10px 20px;
+    text-align: center;
+  }
+  .project-container .project-section .card .card-body {
+    background-color: #1b9bba;
+    color: white;
+  }
+  .project-container .project-section .card:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+  }
+  .project-container .wordPress-project-section {
+    margin-bottom: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project-container .wordPress-project-section .project-1 {
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 200px;
+    margin-left: 50px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/child-theme2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-container .wordPress-project-section .project-2 {
+    height: 400px;
+    width: 350px;
+    background-color: #08567d;
+    position: relative;
+    z-index: 1;
+    margin: 20px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/child_theme.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-container .wordPress-project-section .project-3 {
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 200px;
+    margin-left: 50px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/literature2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-container .wordPress-project-section .project-4 {
+    height: 400px;
+    width: 350px;
+    background-color: #08567d;
+    position: relative;
+    z-index: 1;
+    margin: 20px;
+    background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/literature.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-container .btn {
+    color: white;
+  }
+}
 .contact-form-box {
   width: 50%;
   margin: 20px auto;
@@ -1465,6 +2636,90 @@ body {
   padding: 10px;
 }
 
+@media (max-width: 480px) {
+  .contact-form-box {
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  .contact-form-box h1 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: underline;
+  }
+  .contact-form-box .wpcf7 input[type=text],
+.contact-form-box .wpcf7 input[type=email],
+.contact-form-box .wpcf7 input[type=tel],
+.contact-form-box .wpcf7 textarea,
+.contact-form-box .wpcf7 label,
+.contact-form-box .wpcf7 label {
+    font-size: 30px;
+    color: white;
+    width: 100%;
+  }
+  .contact-form-box textarea {
+    height: 200px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+  }
+  .contact-form-box input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+  }
+  .contact-form-box .button {
+    margin-left: 50px;
+    color: white;
+    font-size: 30px;
+    border: 1px solid white;
+    padding: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .contact-form-box {
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  .contact-form-box h1 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: underline;
+  }
+  .contact-form-box .wpcf7 input[type=text],
+.contact-form-box .wpcf7 input[type=email],
+.contact-form-box .wpcf7 input[type=tel],
+.contact-form-box .wpcf7 textarea,
+.contact-form-box .wpcf7 label,
+.contact-form-box .wpcf7 label {
+    font-size: 30px;
+    color: white;
+    width: 100%;
+  }
+  .contact-form-box textarea {
+    height: 200px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+  }
+  .contact-form-box input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+  }
+  .contact-form-box .button {
+    margin-left: 50px;
+    color: white;
+    font-size: 30px;
+    border: 1px solid white;
+    padding: 10px;
+  }
+}
 .testimonial1 {
   height: 550px;
   width: 100%;
@@ -1478,6 +2733,18 @@ body {
 }
 
 .testimonial3 {
+  height: 550px;
+  width: 100%;
+  background-color: #052230;
+}
+
+.testimonial4 {
+  height: 550px;
+  width: 100%;
+  background-color: #052230;
+}
+
+.testimonial5 {
   height: 550px;
   width: 100%;
   background-color: #052230;
@@ -1520,6 +2787,32 @@ body {
   background-position: center;
 }
 
+.recomend-4 {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid white;
+  color: red;
+  margin: 10px auto;
+  background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/esteban.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.recomend-5 {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid white;
+  color: red;
+  margin: 10px auto;
+  background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/lucas.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 .templet-paragraph {
   color: white;
   font-size: 20px;
@@ -1539,7 +2832,7 @@ body {
 
 .template-recomender {
   text-align: center;
-  color: white;
+  color: #cec80d;
   font-size: 20px;
 }
 
@@ -1548,6 +2841,111 @@ body {
   margin: 20px 0 0 0;
 }
 
+@media (max-width: 480px) {
+  .recomend-1 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .recomend-2 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .recomend-3 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .recomend-4 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .recomend-5 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .templet-paragraph {
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  .recomendor-post {
+    font-weight: 600;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .recomend-1 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .recomend-2 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .recomend-3 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .recomend-4 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .recomend-5 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .templet-paragraph {
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  .recomendor-post {
+    font-weight: 600;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .recomend-1 {
+    height: 200px;
+    width: 200px;
+  }
+
+  .recomend-2 {
+    height: 200px;
+    width: 200px;
+  }
+
+  .recomend-3 {
+    height: 200px;
+    width: 200px;
+  }
+
+  .recomend-4 {
+    height: 200px;
+    width: 200px;
+  }
+
+  .recomend-5 {
+    height: 200px;
+    width: 200px;
+  }
+
+  .templet-paragraph {
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  .recomendor-post {
+    font-weight: 600;
+  }
+}
 /* Comments
 --------------------------------------------- */
 .comment-content a {

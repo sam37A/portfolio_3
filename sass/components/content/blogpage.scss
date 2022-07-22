@@ -339,3 +339,712 @@
         }
     }
 }
+
+// media queries breakpoint 1
+@media (max-width:480px){
+
+    .blog-container{
+
+        .creative-background-box{
+            height:100px;
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/about-bg-scaled.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 480px;
+            h1{
+                // text-align: center;
+                // padding-top:50px;
+                font-size: 30px;
+                font-family: "sacramento";
+                text-transform: uppercase;
+                color:rgb(241, 16, 16);
+                
+            }
+            h1:hover{
+                color:rgb(141, 18, 182);
+                transform: rotate(360deg);
+                transition: .9s ease-in-out;
+                // font-family: 'Rubik Moonrocks';
+                font-family: poppins;
+            }
+    
+        }
+    
+        .writing-section{
+           
+    
+            .writing-content-box{
+                // background-color: blue;
+               
+                // display:flex;
+                // justify-content:center;
+                // align-items:center;
+               
+                
+                .category-title{
+                    color:rgb(255, 255, 255);
+                   margin: auto;
+                   padding:10px;
+                  font-size:20px;
+                   border-bottom:5px solid red;
+                }
+    
+                .category-title:hover{
+                    transform: rotate(360deg);
+                    transition: .9s ease;
+                }
+                .random-diary{
+                    height: 500px;
+                    width: 100%;
+                    margin: 10px 0 10px 0;
+                    
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                    flex-direction: column;
+    
+                    .diary-image-box{
+                        height: 400px;
+                        width: 95%;
+                        // background-color: coral;
+                        background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/diary_image.png");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        border-radius: 10px;
+                     
+    
+                    }
+                    .diary-topic-box{
+                        height: 500px;
+                        width: 95%;
+                        background-color: rgb(66, 175, 248);
+                        overflow: scroll;
+    
+                        details{
+                            background-color: rgb(0, 153, 255);
+                            padding:5px;
+                            border-radius: 30px;
+                            margin:10px;
+                        }
+    
+                            summary{
+                                color:white;
+                                font-size: 20px;
+                                padding:5px;
+                                text-align: center;
+                                cursor: pointer;
+                            }
+    
+                            img{
+                                height: 300px;
+                                width: 100%;
+                                margin:10px;
+                                border-radius: 10px;
+                            }
+                        h1{
+                            text-align: center;
+                            
+                        }
+    
+                        p{
+                            margin:10px;
+                            text-align: justify;
+                            font-size: 20px;
+                        }
+    
+                    }
+        
+    
+                }
+    
+                .poetry{
+                    height: 500px;
+                    width: 100%;
+                    margin: 10px 0 10px 0;
+                    // background-color: rgb(16, 205, 82);
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                    flex-direction: column;
+    
+                    .poetry-image-box{
+                        height: 400px;
+                        width: 95%;
+                        background-color: aqua;
+                        background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/poetry-image.png");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        border-radius: 10px;
+    
+                    }
+                    .poetry-topic-box{
+                        height: 400px;
+                        width: 95%;                 
+                          background-color: rgb(66, 175, 248);
+    
+                        overflow: scroll;
+    
+                        details{
+                            background-color: rgb(0, 153, 255);
+                            padding:5px;
+                            border-radius: 30px;
+                            margin:10px;
+                           
+                        }
+    
+                        summary{
+                            color:white;
+                            font-size: 20px;
+                            padding:10px;
+                            text-align: center;
+                        }
+                        
+    
+                        
+                        h1{
+                            text-align: center;
+                            
+                        }
+    
+                        pre{
+                            // margin:10px;
+                            // text-align: justify;
+                            // font-size: 20px;
+                           
+                            background-color: rgb(0, 153, 255);
+                        }
+                        
+                    }
+    
+                }
+                
+                .book-review{
+                    height: 500px;
+                    width: 100%;
+                    margin: 10px 0 10px 0;
+                    // background-color: rgb(170, 24, 114);
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                    flex-direction: column;
+    
+                    .book-review-image-box{
+                        height: 400px;
+                        width: 95%;
+                        background-color: cadetblue;
+                        background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/1000_splendid_sun.jpg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+    
+                    }
+                    .review-topic-box{
+                        height: 400px;
+                        width: 95%;
+                        // background-color: darkcyan;
+                        background-color: rgb(240, 228, 228);
+                        background-color: black;
+                        color:white;
+                        font-family: poppins;
+                        overflow: scroll;
+    
+                        h1{
+                            text-align: center;
+                            
+                        }
+                       
+    
+                        p{
+                            margin:10px;
+                            text-align: justify;
+                            font-size: 20px;
+                        }
+                        
+                    }
+                
+                }
+    
+            }
+        }
+    
+        // gallery section starts here
+        .gallery-section{
+    
+            h1{
+                width: 250px;;
+                color:white;
+                margin: 10px auto 20px;
+                padding:10px;
+                text-align: center;
+               border-bottom:5px solid red;
+            }
+    
+            .gallery-content-box{
+               margin:15px  0 20px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // flex-wrap: wrap;
+    
+    
+             
+    
+                .painting-1{
+                    height:500px;
+                    width:95%;
+                    background-color: rgb(232, 95, 95);
+                    border-radius: 10px;
+                    margin:30px;
+                    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/photo1-scaled.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+    
+                    
+                     
+    
+                }
+                .painting-2{
+                    height:500px;
+                    width: 95%;
+                   
+                    background-color: rgb(48, 16, 189);
+                   margin:30px;
+                   background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting2-scaled.jpg");
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   background-position: center;
+    
+                }
+    
+                .painting-3{
+                    height:500px;
+                    width: 95%;
+                    background-color: rgb(24, 22, 22);
+                    margin:30px;
+                    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting3-scaled.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+    
+                }
+                .painting-4{
+                    height:500px;
+                    width: 95%;
+                    background-color: rgb(82, 180, 226);
+                    margin:30px;
+                    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting4-scaled.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+    
+    
+    
+                }
+                .painting-5{
+                    height:500px;
+                    width: 95%;
+                    background-color: rgb(82, 180, 226);
+                    margin:30px;
+                    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting5-scaled.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+    
+    
+    
+                }
+                .painting-6{
+                    height:500px;
+                    width: 95%;
+                    background-color: rgb(82, 180, 226);
+                    margin:30px;
+                    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting6-scaled.jpg");
+                    background-repeat: no-repeat;
+                    background-size:cover;
+                    background-position: center;
+                    border-radius: 10px;
+    
+    
+    
+    
+                }
+                .hover-effect:hover{
+                    // transform: rotate(-5deg);
+                   opacity: .7;
+                  transition: .9s ease;
+                  border-radius: 50%;
+                 
+                 
+                   
+                }
+            }
+        }
+    }
+}
+
+// breakpoint 2
+@media  (min-width:481px) and (max-width:768px){
+
+    // try code 
+    .blog-container{
+
+        .creative-background-box{
+            height:100px;
+            width: 100%;
+            background-image: url("http://portfolio3.local/wp-content/uploads/2022/06/about-bg-scaled.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            h1{
+                text-align: center;
+                padding-top:50px;
+                font-size: 35px;
+                font-family:"sacramento";
+                font-weight: 700;
+                font-style: oblique;
+                text-transform: uppercase;
+                color:rgb(241, 16, 16);
+                
+            }
+            h1:hover{
+                color:rgb(141, 18, 182);
+                transform: rotate(360deg);
+                transition: .9s ease-in-out;
+                // font-family: 'Rubik Moonrocks';
+                font-family: poppins;
+            }
+    
+        }
+    
+        .writing-section{
+           
+    
+            .writing-content-box{
+                // background-color: blue;
+               
+                display:flex;
+                justify-content:flex-start;
+                align-items: flex-start;
+                flex-direction: row;
+                flex-wrap: wrap;
+    
+                .category-title{
+                    color:white;
+                   margin: auto;
+                   padding:10px;
+                  
+                   border-bottom:5px solid red;
+                }
+    
+                .category-title:hover{
+                    transform: rotate(360deg);
+                    transition: .9s ease;
+                }
+                .random-diary{
+                    height: 500px;
+                    width: 100%;
+                    margin: 10px 0 10px 0;
+                    // background-color: red;
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+    
+                    .diary-image-box{
+                        height: 400px;
+                        width: 90%;
+                        // background-color: coral;
+                        background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/diary_image.png");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        border-radius: 10px;
+                     
+    
+                    }
+                    .diary-topic-box{
+                        height: 400px;
+                        width: 70%;
+                        background-color: rgb(66, 175, 248);
+                        overflow: scroll;
+    
+                        details{
+                            background-color: rgb(0, 153, 255);
+                            padding:5px;
+                            border-radius: 30px;
+                            margin:10px;
+                        }
+    
+                            summary{
+                                color:white;
+                                font-size: 25px;
+                                padding:5px;
+                                text-align: center;
+                            }
+    
+                            img{
+                                height: 300px;
+                                width: 100%;
+                                margin:10px;
+                                border-radius: 10px;
+                            }
+                        h1{
+                            text-align: center;
+                            
+                        }
+    
+                        p{
+                            margin:10px;
+                            text-align: justify;
+                            font-size: 20px;
+                        }
+    
+                    }
+        
+    
+                }
+    
+                .poetry{
+                    height: 500px;
+                    width: 100%;
+                    margin: 10px 0 10px 0;
+                    // background-color: rgb(16, 205, 82);
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+    
+                    .poetry-image-box{
+                        height: 400px;
+                        width: 90%;
+                        background-color: aqua;
+                        background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/poetry-image.png");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        border-radius: 10px;
+    
+                    }
+                    .poetry-topic-box{
+                        height: 400px;
+                        width: 70%;                 
+                          background-color: rgb(66, 175, 248);
+    
+                        overflow: scroll;
+    
+                        details{
+                            background-color: rgb(0, 153, 255);
+                            padding:5px;
+                            border-radius: 30px;
+                            margin:10px;
+                           
+                        }
+    
+                        summary{
+                            color:white;
+                            font-size: 25px;
+                            padding:10px;
+                            text-align: center;
+                        }
+                        
+    
+                        
+                        h1{
+                            text-align: center;
+                            
+                        }
+    
+                        pre{
+                            // margin:10px;
+                            // text-align: justify;
+                            // font-size: 20px;
+                           
+                            background-color: rgb(0, 153, 255);
+                        }
+                        
+                    }
+    
+                }
+                
+                .book-review{
+                    height: 500px;
+                    width: 100%;
+                    margin: 10px 0 10px 0;
+                    // background-color: rgb(170, 24, 114);
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+    
+                    .book-review-image-box{
+                        height: 400px;
+                        width: 45%;
+                        background-color: cadetblue;
+                        background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/1000_splendid_sun.jpg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+    
+                    }
+                    .review-topic-box{
+                        height: 400px;
+                        width: 50%;
+                        // background-color: darkcyan;
+                        background-color: rgb(240, 228, 228);
+                        background-color: black;
+                        color:white;
+                        font-family: poppins;
+                        overflow: scroll;
+    
+                        h1{
+                            text-align: center;
+                            
+                        }
+                       
+    
+                        p{
+                            margin:10px;
+                            text-align: justify;
+                            font-size: 20px;
+                        }
+                        
+                    }
+                
+                }
+    
+            }
+        }
+    
+        // gallery section starts here
+        .gallery-section{
+    
+            h1{
+                width: 250px;;
+                color:white;
+                margin: 10px auto 20px;
+                padding:10px;
+                text-align: center;
+               border-bottom:5px solid red;
+            }
+    
+            .gallery-content-box{
+               margin:15px  0 20px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+    
+    
+             
+    
+                .painting-1{
+                    height:500px;
+                    width:95%;
+                    background-color: rgb(232, 95, 95);
+                    border-radius: 10px;
+                    margin:10px;
+                    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/photo1-scaled.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+    
+                    
+                     
+    
+                }
+                .painting-2{
+                    height:500px;
+                    width: 95%;
+                   
+                    background-color: rgb(48, 16, 189);
+                   margin:10px;
+                   background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting2-scaled.jpg");
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   background-position: center;
+    
+                }
+    
+                .painting-3{
+                    height:500px;
+                    width: 95%;
+                    background-color: rgb(24, 22, 22);
+                    margin:10px;
+                    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting3-scaled.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+    
+                }
+                .painting-4{
+                    height:500px;
+                    width: 95%;
+                    background-color: rgb(82, 180, 226);
+                    margin:10px;
+                    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting4-scaled.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+    
+    
+    
+                }
+                .painting-5{
+                    height:500px;
+                    width: 95%;
+                    background-color: rgb(82, 180, 226);
+                    margin:10px;
+                    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting5-scaled.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+    
+    
+    
+                }
+                .painting-6{
+                    height:500px;
+                    width: 95%;
+                    background-color: rgb(82, 180, 226);
+                    margin:10px;
+                    background-image: url("http://portfolio3.local/wp-content/uploads/2022/07/painting6-scaled.jpg");
+                    background-repeat: no-repeat;
+                    background-size:cover;
+                    background-position: center;
+                    border-radius: 10px;
+    
+    
+    
+    
+                }
+                .hover-effect:hover{
+                    // transform: rotate(-5deg);
+                   opacity: .7;
+                  transition: .9s ease;
+                  border-radius: 50%;
+                 
+                 
+                   
+                }
+            }
+        }
+    }
+    
+    
+    // try code
+    
+
+}
+
+// break point 3
+
+@media (min-width:769px) and (max-width:1024px){
+
+
+}
