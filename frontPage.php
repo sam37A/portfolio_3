@@ -20,7 +20,7 @@
                 <h3 class ="word-press">A WordPress Developer</h3> <br>
                 <p> I  design and develope responsive websites, familiar with HTML, CSS, JavaScript, Bootstrap, etc, and specialized with WordPress.
                     <br>
-                    <a href="http://portfolio3.local/about-me/"  target = "_blank" class="btn btn-primary">More About Me</a>
+                    <a href="http://portfolio3.local/about-me/"  class="btn btn-primary">More About Me</a>
                    
                 
 
